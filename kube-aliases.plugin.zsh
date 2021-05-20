@@ -3,6 +3,14 @@ KALIAS="$PLUGIN_DIR"
 KRESOURCES="$PLUGIN_DIR/kube-aliases/docs/resources"
 SHELL_NAME="$(basename $SHELL)"
 
+function kubectl() {
+    if ! type __start_kubectl >/dev/null 2>&1; then
+        source <(command kubectl completion zsh)
+    fi
+
+    command kubectl "$@"
+}
+
 # Contexts
 alias kcc='kubectl config get-contexts'
 alias kctx='kubectx'
