@@ -3,7 +3,7 @@
 This is an oh-my-zsh plugin (or source `kube-aliases.plugin.zsh` for bash) to
 make working with kubernetes easier. It provides a bunch of bash aliases and
 zsh functions. Docs can be found
-[here](https://github.com/Dbz/kube-aliases/blob/master/docs/usage), which
+[here](https://github.com/alisonjenkins/kube-aliases/blob/master/docs/usage), which
 clarifies all aliases.
 
 ## Usage
@@ -49,7 +49,7 @@ krd        # restart a deployment
 kstatus    # search across namespaces to find pods statuses
 ```
 
-For a more detailed list of aliases, view the [docs](https://github.com/Dbz/kube-aliases/blob/master/docs/usage).
+For a more detailed list of aliases, view the [docs](https://github.com/alisonjenkins/kube-aliases/blob/master/docs/usage).
 
 Not everything is currently implemented, but more and more is being added to
 the list. If something is missing that is desired, feel free to submit a pull
@@ -61,7 +61,7 @@ request.
 ### Oh-My-Zsh
 
 ```
-git clone git@github.com:Dbz/kube-aliases.git ~/.oh-my-zsh/custom/plugins/kube-aliases
+git clone git@github.com:alisonjenkins/kube-aliases.git ~/.oh-my-zsh/custom/plugins/kube-aliases
 echo "plugins+=(kube-aliases)" >> ~/.zshrc
 ```
 
@@ -79,7 +79,7 @@ Add `zgen load dbz/kube-aliases` to your zgen plugins in your `.zshrc`
 
 ### Zinit
 
-Add `zinit load Dbz/kube-aliases` to your zinit plugins in your `.zshrc`
+Add `zinit load alisonjenkins/kube-aliases` to your zinit plugins in your `.zshrc`
 
 ### Bash
 
