@@ -32,7 +32,7 @@ core:
     kga                             kubectl get --all-namespaces
     kl                              kubectl logs
     klf                             kubectl logs -f
-    kns                             kubens
+    kns                             `kubens` or if installed `kubie ns`
 
 certificatesigningrequests:
     kgcsr                           kubectl get certificatesigningrequests
@@ -129,7 +129,7 @@ namespaces:
     kens                            kubectl edit namespaces
     kgns                            kubectl get namespaces
     kgnsy                           kubectl get namespaces -o yaml
-    kns                             kubens
+    kns                             `kubens` or if installed `kubie ns`
 
 networkpolicies:
     kgnp                            kubectl get networkpolicies

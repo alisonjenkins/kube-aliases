@@ -87,16 +87,11 @@ Source `kube-aliases.plugin.zsh` in your `.bashrc`.
 
 ### Aliases for Kubernetes Extensions
 
-#### kubectx
+#### kubectx and kubie
 For easy context and namespace switching there is
-[kubectx](https://github.com/ahmetb/kubectx). `kubectx` allows users context
-switching, and the linked github comes with `kubens` which allows for simple
-namespace switching. You can use the following aliases:
-
-```bash
-alias kctx='kubectx'
-alias kns='kubens'
-```
+[kubectx](https://github.com/ahmetb/kubectx) and  [kubie](https://github.com/sbstp/kubie). `kubectx` and `kubie` allow context and namespace switching.
+and the linked github comes with `kubens` which allows for simple
+namespace switching.
 #### Kubernetes Metrics Server
 
 To get some metrics from nodes or pods, you can use [Kubernetes Metrics

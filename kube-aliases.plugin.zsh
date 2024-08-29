@@ -13,7 +13,12 @@ function kubectl() {
 
 # Contexts
 alias kcc='kubectl config get-contexts'
-alias kctx='kubectx'
+
+if command -v kubie &>/dev/null; then
+  alias kctx='kubie ctx'
+elif command -v kubectx &>/dev/null; then
+  alias kctx='kubectx'
+fi
 
 # Core
 alias k='kubectl'
@@ -123,7 +128,12 @@ alias kdsns='kubectl describe namespaces'
 alias kens='kubectl edit namespaces'
 alias kgns='kubectl get namespaces'
 alias kgnsy='kubectl get namespaces -o yaml'
-alias kns='kubens'
+
+if command -v kubie &>/dev/null; then
+  alias kns='kubie ns'
+elif command -v kubens &>/dev/null; then
+  alias kns='kubens'
+fi
 
 # networkpolicies
 alias kgnp='kubectl get networkpolicies'
