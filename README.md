@@ -95,7 +95,7 @@ namespace switching.
 #### Kubernetes Metrics Server
 
 To get some metrics from nodes or pods, you can use [Kubernetes Metrics
-Server](https://github.com/kubernetes-incubator/metrics-server). There are 
+Server](https://github.com/kubernetes-incubator/metrics-server). There are
 the aliases
 
 ```bash
