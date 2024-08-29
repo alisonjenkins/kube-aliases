@@ -1,38 +1,38 @@
 create configuration files (all, deployment, ingress, namespace, service).
     kcon -[a|d|i|n|s]
 Delete all pods in a namespace
-    kdap 
+    kdap
 drain a node
     kdrain node
 Run a command in a container or enter the container.
     kexec pod [command]
 Find everything with (e.g. all resources on a node)
-    kfind regular expression 
+    kfind regular expression
 Get just pod names in a namespace
     kgpns
 Find pods with regular expressions
     kpfind
 Start a restart on pods for a given deployment, will follow the rolling release policy
-    krd 
+    krd
 Search across namespaces to find pod statuses
     kstatus -[C|c|f|p|r|s|u]
 
 contexts:
     kcc                             kubectl config get-contexts
-    kctx                            kubectx
+    kctx                            `kubectx` or if installed `kubie ctx`
 
 core:
     k                               kubectl
     kc                              kubectl
     kube                            kubectl
-    kd                              kubectl delete 
+    kd                              kubectl delete
     kds                             kubectl describe
     ke                              kubectl edit
     kg                              kubectl get
     kga                             kubectl get --all-namespaces
     kl                              kubectl logs
     klf                             kubectl logs -f
-    kns                             kubens
+    kns                             `kubens` or if installed `kubie ns`
 
 certificatesigningrequests:
     kgcsr                           kubectl get certificatesigningrequests
@@ -82,10 +82,10 @@ deployments:
     kdd                             kubectl delete deployments
     kdsd                            kubectl describe deployments
     ked                             kubectl edit deployments
-    kgd                             kubectl get deployments 
+    kgd                             kubectl get deployments
     kgdw                            watch kubectl get deployments
     kgdy                            kubectl get deployments -o yaml
-    
+
 endpoints:
     kgep                            kubectl get endpoints
 
@@ -99,7 +99,7 @@ from file:
     kef                             kubectl edit -f
     kdsf                            kubectl describe -f
     kgf                             kubectl get -f
-    
+
 horizontalpodautoscalers:
     kghpa                           kubectl get horizontalpodautoscalers
 
@@ -110,7 +110,7 @@ ingress:
     kgai                            kubectl get ingress -o wide --all-namespaces
     kgi                             kubectl get ingress
     kgiy                            kubectl get ingress -o yaml
-    
+
 jobs:
     kdj                             kubectl delete job
     kdsj                            kubectl describe job
@@ -119,7 +119,7 @@ jobs:
     kgjw                            watch kubectl get jobs
     kgjy                            kubectl get jobs -o yaml
     kgaj                            kubectl get jobs -o wide --all-namespaces
-    
+
 limitranges:
     kglr                            kubectl get limitranges
 
@@ -129,18 +129,18 @@ namespaces:
     kens                            kubectl edit namespaces
     kgns                            kubectl get namespaces
     kgnsy                           kubectl get namespaces -o yaml
-    kns                             kubens
+    kns                             `kubens` or if installed `kubie ns`
 
 networkpolicies:
     kgnp                            kubectl get networkpolicies
-    
+
 nodes:
     kdsn                            kubectl describe nodes
     ken                             kubectl edit nodes
     kgn                             kubectl get nodes
     kgny                            kubectl get nodes -o yaml
     ktn                             kubectl top nodes
-    
+
 persistentvolumeclaims:
     kdpvc                           kubectl delete persistentvolumeclaims
     kdspvc                          kubectl describe persistentvolumeclaims
@@ -171,7 +171,7 @@ pods:
     kgpw                            watch kubectl get pods
     kgpy                            kubectl get pods -o yaml
     ktp                             kubectl top pods
-    
+
 podsecuritypolicies:
     kpsp                            kubectl get podsecuritypolicies
 
